@@ -1,5 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import DownloadCSV from './DownloadCSV';
+import CSV from './CSV';
+import Form from './Form';
+
+const data = [
+  { name: 'Okello ', age: 20, profession: 'Engineer' },
+  { name: 'Mary', age: 35, profession: 'Accountant' },
+  { name: 'Ivan', age: 45, profession: 'Manager' },
+];
+
+//const data1= localStorage.getItem('data1')
+
 
 function App() {
   return (
@@ -17,6 +29,18 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+           <h1>Download CSV Example</h1>
+           <DownloadCSV data={data} fileName="test" />
+           <h1> CSV Example 2</h1>
+           <CSV data={data} fileName={'Degen'} />
+           <h3>
+            Form
+           </h3>
+           <p>New Form</p>
+           <Form/>
+           <CSV data={data} fileName={'Form'}/>
+        </div>
       </header>
     </div>
   );
