@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import DownloadCSV from './DownloadCSV';
-import CSV from './CSV';
+//import CSV from './CSV';
 import Form from './Form';
 
 const data = [
@@ -33,13 +33,13 @@ function App() {
            <h1>Download CSV Example</h1>
            <DownloadCSV data={data} fileName="test" />
            <h1> CSV Example 2</h1>
-           <CSV data={data} fileName={'Degen'} />
+           {/* <CSV data={data} fileName={'Degen'} /> */}
            <h3>
             Form
            </h3>
            <p>New Form</p>
            <Form/>
-           <CSV data={data} fileName={'Form'}/>
+           
         </div>
       </header>
     </div>
