@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import DownloadCSV from './DownloadCSV';
-//import CSV from './CSV';
+import CSV from './CSV';
 import Form from './Form';
 
 const data = [
@@ -10,10 +10,18 @@ const data = [
   { name: 'Ivan', age: 45, profession: 'Manager' },
 ];
 
-//const data1= localStorage.getItem('data1')
+const data1= localStorage.getItem('data1')
+// Retrieving data from local storage
+// const storedData = localStorage.getItem('data1');
+// const parsedData = JSON.parse(storedData);
 
 
 function App() {
+  
+
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -33,12 +41,12 @@ function App() {
            <h1>Download CSV Example</h1>
            <DownloadCSV data={data} fileName="test" />
            <h1> CSV Example 2</h1>
-           {/* <CSV data={data} fileName={'Degen'} /> */}
+           <CSV data={data} fileName={'Report2'} />
            <h3>
             Form
            </h3>
-           <p>New Form</p>
-           <Form/>
+          
+           <Form />
            
         </div>
       </header>
