@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import DownloadCSV from './DownloadCSV';
 import CSV from './CSV';
-import Form from './Form';
+
+import FormToCSV from './FormtoCSV';
+import WeekReport from './WeekReport';
 
 const data = [
   { name: 'Okello ', age: 20, profession: 'Engineer' },
@@ -10,18 +11,9 @@ const data = [
   { name: 'Ivan', age: 45, profession: 'Manager' },
 ];
 
-const data1= localStorage.getItem('data1')
-// Retrieving data from local storage
-// const storedData = localStorage.getItem('data1');
-// const parsedData = JSON.parse(storedData);
-
 
 function App() {
-  
-
-
-
-
+ 
   return (
     <div className="App">
       <header className="App-header">
@@ -38,16 +30,22 @@ function App() {
           Learn React
         </a>
         <div>
-           <h1>Download CSV Example</h1>
-           <DownloadCSV data={data} fileName="test" />
+           
            <h1> CSV Example 2</h1>
            <CSV data={data} fileName={'Report2'} />
            <h3>
             Form
            </h3>
           
-           <Form />
            
+           <h4>
+            CSV To Form
+           </h4>
+           <FormToCSV/>
+        </div>
+        <div>
+          <h4>Weekly Report</h4>
+          <WeekReport/>
         </div>
       </header>
     </div>
