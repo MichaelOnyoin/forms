@@ -56,11 +56,11 @@ const WeekReport = () => {
         <label>
             Previous Weekly Status :
             <label>Target Achieved</label>
-            <input type='radio' name='targets' value={'Target Achieved'} onChange={handleChange}  />
+            <input type='radio' name='targets' value={'Target Achieved'} onChange={handleChange} style={{backgroundColor:'green'}}  />
             <label> Partial Achieved</label>
-            <input type='radio' name='targets' value={'Partial Achieved'} onChange={handleChange}  />
+            <input type='radio' name='targets' value={'Partial Achieved'} onChange={handleChange} style={{backgroundColor:'orange'}} />
             <label>Not Achieved</label>
-            <input type='radio' name='targets' value={'Not Achieved'} onChange={handleChange}  />
+            <input type='radio' name='targets' value={'Not Achieved'} onChange={handleChange} style={{backgroundColor:'red'}}  />
            
         </label>
         <label>

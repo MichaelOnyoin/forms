@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 .App {
   text-align: center;
 }
@@ -28,6 +34,29 @@
   color: #61dafb;
 }
 
+.popupContainer {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: fixed;
+  bottom: 0px;
+  min-height: 100px;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.close {
+  transform: translateY(100%);
+  transition: 400ms;
+}
+
+.open {
+  box-shadow: 0 0 10px rgba(55, 55, 55, 0.3);
+  transition: 400ms;
+}
+.content{
+  max-height: 70vh;
+  overflow-y: scroll;
+}
 
 @keyframes App-logo-spin {
   from {

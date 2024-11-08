@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import CSV from './CSV';
-
+import Form from './Form';
 import FormToCSV from './FormtoCSV';
 import WeekReport from './WeekReport';
+//import Case from './Pop';
+import Week from './Form2';
 
 const data = [
   { name: 'Okello ', age: 20, profession: 'Engineer' },
@@ -29,6 +31,7 @@ function App() {
         >
           Learn React
         </a>
+      </header>  
         <div>
            
            <h1> CSV Example 2</h1>
@@ -47,7 +50,14 @@ function App() {
           <h4>Weekly Report</h4>
           <WeekReport/>
         </div>
-      </header>
+        {/* <div>
+          <p>Pop up</p>
+          <Case/>
+        </div> */}
+      <Form/>
+
+      
+
     </div>
   );
 }
